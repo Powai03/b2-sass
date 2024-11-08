@@ -1,0 +1,61 @@
+@use "variables";
+@use "mixins";
+
+footer {
+    background-color: $primary-color;
+    padding: $padding;
+    color: #fff;
+  
+    .newsletter {
+      &__text {
+        margin-bottom: $padding;
+      }
+  
+      &__input {
+        display: flex;
+  
+        &__box {
+          flex: 1;
+          padding: 0.5rem;
+          margin-right: $margin;
+        }
+  
+        &__submit {
+          @include button-style($secondary-color);
+        }
+      }
+    }
+  
+    .navbot {
+      &__list {
+        list-style: none;
+        display: flex;
+  
+        &__item {
+          margin-right: $padding;
+  
+          &__link {
+            color: #fff;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  
+    .rights {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  
+      &__text {
+        font-size: 0.875rem;
+      }
+  
+      &__link a {
+        color: #fff;
+        margin-left: $margin;
+        text-decoration: none;
+      }
+    }
+  }
+  

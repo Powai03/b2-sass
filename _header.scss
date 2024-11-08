@@ -1,0 +1,38 @@
+@use 'variables';
+@use 'mixins';
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__logo {
+    margin-left: 100px;
+    height: 70%;
+    width: auto;
+    }
+  
+    .nav {
+      &__list {
+        &__item {
+          &__link {
+            // Styles pour les liens du menu
+          }
+        }
+      }
+    }
+  
+    &__search-container {
+      &__button {
+        // Styles pour le bouton de recherche
+      }
+  
+      &__box {
+        // Styles pour la boîte de recherche
+      }
+    }
+  
+    &__button__deep {
+      // Styles pour le bouton spécifique de connexion
+    }
+  }
+  

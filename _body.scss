@@ -1,0 +1,78 @@
+@use 'variables';
+@use 'mixins';
+body {
+    font-family: 'Gilroy', sans-serif;
+    font-size: variables.$font-size-base;
+    line-height: 1.5;
+    color: variables.$text-color;
+    background-color: variables.$background-color;
+    padding: variables.$padding;
+    margin: variables.$margin;
+}
+  
+  .section {
+    &.herro-banner {
+      &__first {
+        &__title {
+          // Styles pour le titre
+        }
+  
+        &__subtitle {
+          // Styles pour le sous-titre
+        }
+  
+        &__button-container {
+          .herro-banner__first__button {
+            // Styles pour le bouton
+          }
+  
+          &__deep {
+            // Styles pour le bouton spécial
+          }
+        }
+      }
+  
+      &__second {
+        // Styles pour la seconde partie du banner
+      }
+    }
+  
+    .card-container {
+      &__top {
+        &__text {
+          &__title {
+            // Styles pour le titre
+          }
+  
+          &__description {
+            // Styles pour la description
+          }
+        }
+  
+        &__button {
+          // Styles pour le bouton
+        }
+      }
+  
+      &__display {
+        &__card {
+          &__img {
+            // Styles pour l'image
+          }
+  
+          &__title {
+            // Styles pour le titre de la carte
+          }
+  
+          &__info {
+            // Styles pour les informations
+          }
+  
+          &__price {
+            // Styles pour le prix
+          }
+        }
+      }
+    }
+  }
+  
