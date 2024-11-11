@@ -1,0 +1,123 @@
+@use "variables";
+@use "mixins";
+
+footer {
+  @include mixins.padding;
+  background-color: variables.$primary-color;
+  margin-top: 4em;
+  padding-top: 4em;
+    .newsletter {
+      display: flex;
+      background-color: variables.$secondary-color;
+      border-radius: 16px;
+      padding: 2em;
+      margin-bottom: 2em;
+      &__text {
+        font-size: 1.5em;
+        color: white;
+        padding-left: 1em;
+        width: 35%;
+        margin-right: 2em;
+        line-height: 1.7;
+      }
+  
+      &__input {
+        background-color: white;
+        border-radius: 10px;
+        padding: 12px;
+        width: 65%;
+        height: 5em;;
+        display: flex;
+        align-items: center;
+        &__box {
+          border: 1px solid variables.$secondary-color;
+          border-radius: 10px;
+          height: 100%;
+          width: 75%;
+          padding-left: 3em;
+          font-size: 16px;
+        }
+  
+        &__submit {
+          background-color: variables.$secondary-color;
+          height: 100%;
+          width: 25%;
+          border-radius: 10px;
+          color: white;
+          font-family: variables.$font-family-base;
+          border: none;
+          margin-left: 1em;
+        }
+      }
+    }
+  
+    .navbot {
+      display: flex;
+      justify-content: space-between;
+      &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width:35%;
+
+        &__item {
+          list-style: none;
+
+          &__link {
+            text-decoration: none;
+            color: variables.$secondary-color;
+            font-weight: 400;
+            font-size: 1em;
+          }
+        }
+  
+        &__icons {
+          display: flex;
+          justify-content: space-between;
+          width: 20%;
+          &__svg {
+            
+            fill: variables.$secondary-color;
+          }
+        }
+        &__icon{
+            list-style: none;
+        }
+      }
+    }
+
+    span {
+      display: block;
+      width: 100%;
+      height: 2px;
+      background-color: grey;
+      margin: 2em 0;
+      opacity: 0.2;
+    }
+    .rights {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 2em;
+      &__text {
+        font-family: variables.$font-family-base;
+        opacity: 0.5;
+        color: variables.$secondary-color;
+      }
+      &__logo{
+        width: 15%;
+      }
+      &__link {
+        display: flex;
+        justify-content: space-between;
+        width: 20%;
+        a {
+          text-decoration: none;
+          color: variables.$secondary-color;
+          opacity: 0.5;
+          font-size: 0.9em;
+          
+        }
+      }
+    }
+  }

@@ -1,0 +1,37 @@
+@use "variables";
+
+@mixin button-style {
+    color:variables.$background-color;
+    background-color: variables.$text-color;
+    border: none ;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 12em;
+    height: 3em;
+}
+
+@mixin button-white{
+  color: variables.$text-color;
+  background-color: variables.$primary-color;
+  border: 2px solid variables.$text-color;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 12em;  
+  height: 3em;
+}
+
+@mixin padding{
+  padding-left: 8em;
+  padding-right: 8em;
+}
+
+@mixin margin{
+  margin-left: 8em;
+  margin-right: 8em;
+}
